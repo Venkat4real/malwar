@@ -17,7 +17,8 @@ malwar scan SKILL.md
 [![Docker](https://img.shields.io/badge/docker-ghcr.io%2Fap6pack%2Fmalwar-blue)](https://ghcr.io/ap6pack/malwar)
 [![Docs](https://img.shields.io/badge/docs-ap6pack.github.io%2Fmalwar-blue)](https://ap6pack.github.io/malwar)
 
-<!-- GIF demo goes here once recorded -->
+<!-- TODO: convert docs/images/clawhavoc-detection.cast to GIF (agg or svg-term) and embed here -->
+<!-- For now, the scan output example below serves as the above-fold demo -->
 
 ---
 
