@@ -160,7 +160,7 @@ async def _async_search(query: str, limit: int) -> None:
             r.slug,
             r.display_name,
             r.summary[:60] + ("..." if len(r.summary) > 60 else ""),
-            r.version,
+            r.version or "-",
             f"{r.score:.1f}",
         )
 
