@@ -1,5 +1,3 @@
-# Copyright (c) 2026 Veritas Aequitas Holdings LLC. All rights reserved.
-
 # Malwar GitLab CI Integration
 
 Scan SKILL.md files in your GitLab CI/CD pipelines for malware, prompt injection, data exfiltration, and other threats targeting agentic AI systems.
@@ -31,7 +29,7 @@ include:
 variables:
   MALWAR_SCAN_PATH: "skills/"        # Directory to scan (default: ".")
   MALWAR_FAIL_ON: "SUSPICIOUS"       # Fail threshold (default: "MALICIOUS")
-  MALWAR_VERSION: "0.3.0"            # Pin a version (default: latest)
+  MALWAR_VERSION: "0.3.1"            # Pin a version (default: latest)
   MALWAR_OUTPUT_FORMAT: "gitlab-codequality"  # Output format
 ```
 
@@ -47,7 +45,7 @@ variables:
 ### Verdict Thresholds
 
 | Verdict | Risk Score | Description |
-|---------|-----------|-------------|
+|--------- | ----------- | ------------- |
 | `CLEAN` | 0-14 | No threats detected |
 | `CAUTION` | 15-39 | Minor concerns found |
 | `SUSPICIOUS` | 40-74 | Likely threats detected |
@@ -92,7 +90,7 @@ include:
 variables:
   MALWAR_SCAN_PATH: "agent-skills/"
   MALWAR_FAIL_ON: "SUSPICIOUS"
-  MALWAR_VERSION: "0.3.0"
+  MALWAR_VERSION: "0.3.1"
 
 malwar-scan:
   rules:
